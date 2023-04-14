@@ -1,0 +1,19 @@
+{
+  "name": "devchallenge-buttons",
+  "version": "1.0.0",
+  "description": "frontend dev challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuelCespOs/devChallenge-buttons.git"
+  },
+  "author": "Manuel C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manuelCespOs/devChallenge-buttons/issues"
+  },
+  "homepage": "https://github.com/manuelCespOs/devChallenge-buttons#readme"
+}

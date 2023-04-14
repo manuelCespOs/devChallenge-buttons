@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reusable-button.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <h1>Welcome</h1>
+    <div id="default-btn" class="btn-container"></div>
+    <div id="outline-btn" class="btn-container"></div>
+    <div id="text-btn" class="btn-container"></div>
+    <div id="text-btn" class="btn-container"></div>
+    <div id="disabled-btn" class="btn-container"></div>
+    <div id="icon-btn" class="btn-container"></div>
+    <div id="right-icon-btn" class="btn-container"></div>
+    <div id="sized-btn" class="btn-container"></div>
+    <div id="colored-btn" class="btn-container"></div>
+    
+    <script type="module">
+        import { createReusableButton } from "./scripts/reusable-button.js";
+
+        createReusableButton({elementId: 'default-btn', text: 'Default', className: 'btn-default'})
+        createReusableButton({elementId: 'outline-btn', text: 'Default', className: 'btn-outline'})
+        createReusableButton({elementId: 'text-btn', text: 'Default', className: 'btn-text'})
+        createReusableButton({elementId: 'disabled-btn', text: 'Default', className: 'btn-default', isDisabled: true})
+        createReusableButton({elementId: 'disabled-btn', text: 'Default', className: 'btn-text', isDisabled: true})
+        createReusableButton({elementId: 'icon-btn', text: `Default`, className: 'primary', iconRequired:true, iconPos:'L'})
+        createReusableButton({elementId: 'icon-btn', text: `Default`, className: 'primary', iconRequired:true, iconPos:'R'})
+        createReusableButton({elementId: 'sized-btn', text: `Default`, className: 'sm primary'})
+        createReusableButton({elementId: 'sized-btn', text: `Default`, className: 'md primary'})
+        createReusableButton({elementId: 'sized-btn', text: `Default`, className: 'lg primary'})
+        createReusableButton({elementId: 'colored-btn', text: `Default`, className: 'default'})
+        createReusableButton({elementId: 'colored-btn', text: `Default`, className: 'primary'})
+        createReusableButton({elementId: 'colored-btn', text: `Default`, className: 'secondary'})
+        createReusableButton({elementId: 'colored-btn', text: `Default`, className: 'danger'})
+    </script>
+</body>
+</html>
